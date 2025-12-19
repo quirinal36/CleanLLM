@@ -1,0 +1,44 @@
+# Core Framework
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+python-dotenv==1.0.1
+
+# AI/LLM
+openai==1.57.2
+langchain==0.3.10
+langchain-openai==0.2.10
+langgraph==0.2.53
+
+# Vector Database
+pinecone-client==5.0.1
+
+# Safety & Content Filtering
+llama-guard==0.1.0  # Note: Replace with actual package when available
+google-cloud-perspective==1.0.0  # Note: Verify package name
+
+# Data Processing
+pydantic==2.10.3
+python-multipart==0.0.18
+
+# Authentication & Security
+passlib[bcrypt]==1.7.4
+python-jose[cryptography]==3.3.0
+bcrypt==4.2.1
+
+# Database
+sqlalchemy==2.0.36
+alembic==1.14.0
+
+# Utilities
+httpx==0.28.1
+aiofiles==24.1.0
+
+# Testing
+pytest==8.3.4
+pytest-asyncio==0.24.0
+pytest-cov==6.0.0
+
+# Development
+black==24.10.0
+flake8==7.1.1
+mypy==1.13.0
