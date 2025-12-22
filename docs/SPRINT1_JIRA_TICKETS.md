@@ -327,10 +327,18 @@ PII_PATTERNS = {
 
 #### Frontend Tasks:
 
-**TASK-101-7**: 회원가입 화면 UI 구현
+**✅ TASK-101-7**: 회원가입 화면 UI 구현 - **완료 (2025-12-22)**
 - **담당**: Frontend
 - **예상 시간**: 4시간
 - **파일**: `frontend/src/screens/SignupScreen.tsx`
+- **상태**: ✅ 구현 완료
+- **구현 내용**:
+  - 가입 유형 선택 (학생/부모)
+  - 이메일 입력 및 검증
+  - 비밀번호 입력 및 검증 (최소 8자, 영문+숫자)
+  - 실시간 폼 검증 및 에러 표시
+  - 파스텔 톤 색상 테마 적용
+  - 반응형 레이아웃 (KeyboardAvoidingView)
 
 **TASK-101-8**: 로그인 화면 UI 구현
 - **담당**: Frontend
@@ -483,7 +491,7 @@ CREATE TABLE chat_messages (
 **Day 1-2: 환경 설정 및 Story 1 시작**
 - 팀 전체: 개발 환경 설정 (Python, Node.js, API 키 발급)
 - Backend: TASK-101-1, TASK-101-2 (DB 및 Model)
-- Frontend: TASK-101-7, TASK-101-8 (UI 화면)
+- Frontend: ✅ TASK-101-7 (회원가입 UI - 완료), TASK-101-8 (로그인 UI)
 
 **Day 3-4: Story 1 핵심 기능 구현**
 - Backend: TASK-101-3, TASK-101-4 (회원가입/로그인 API)

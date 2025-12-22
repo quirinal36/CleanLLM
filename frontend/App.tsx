@@ -4,33 +4,9 @@
  */
 
 import React from 'react';
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SignupScreen } from './src/screens';
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.title}>EduGuard AI</Text>
-      <Text style={styles.subtitle}>청소년을 위한 안전한 AI 학습 플랫폼</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+  // TODO: Navigation 설정 후 Stack Navigator로 교체 예정
+  return <SignupScreen />;
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    fontSize: 32,
-    fontWeight: 'bold',
-    marginBottom: 10,
-  },
-  subtitle: {
-    fontSize: 16,
-    color: '#666',
-  },
-});

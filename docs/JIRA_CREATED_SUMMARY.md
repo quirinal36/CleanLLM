@@ -48,7 +48,7 @@
 4. CLEAN-8: 로그인 API 엔드포인트 구현
 5. CLEAN-9: 부모-자녀 연동 API 구현
 6. CLEAN-10: 인증 API 단위 테스트 작성
-7. CLEAN-11: 회원가입 화면 UI 구현 (Frontend)
+7. ✅ CLEAN-11: 회원가입 화면 UI 구현 (Frontend) - **완료**
 8. CLEAN-12: 로그인 화면 UI 구현 (Frontend)
 9. CLEAN-13: Auth API Service 구현 (Frontend)
 10. CLEAN-14: 토큰 저장 및 관리 로직 (Frontend)
@@ -175,7 +175,7 @@
 
 ### Frontend 개발자 (10개 Task)
 **Story 101 (4개)**:
-- CLEAN-11: 회원가입 UI
+- ✅ CLEAN-11: 회원가입 UI - **완료 (2025-12-22)**
 - CLEAN-12: 로그인 UI
 - CLEAN-13: Auth API Service
 - CLEAN-14: 토큰 관리
