@@ -48,10 +48,13 @@ async def health_check():
     }
 
 
-# TODO: Import and include API routers
-# from app.api import chat, auth, safety
+# Import and include API routers
+from app.api import auth_router
+
+app.include_router(auth_router, prefix="/api/v1/auth", tags=["auth"])
+# TODO: Add other routers
+# from app.api import chat, safety
 # app.include_router(chat.router, prefix="/api/v1/chat", tags=["chat"])
-# app.include_router(auth.router, prefix="/api/v1/auth", tags=["auth"])
 # app.include_router(safety.router, prefix="/api/v1/safety", tags=["safety"])
 
 
