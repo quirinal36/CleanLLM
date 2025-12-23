@@ -3,14 +3,11 @@ Security utilities for password hashing and JWT token management
 비밀번호 해싱 및 JWT 토큰 관리 유틸리티
 """
 
-from passlib.context import CryptContext
+import bcrypt
 from jose import JWTError, jwt
 from datetime import datetime, timedelta
 from typing import Optional, Dict, Any
 from ..core.config import settings
-
-# Password hashing context
-pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 
 def hash_password(password: str) -> str:
@@ -28,7 +25,7 @@ def hash_password(password: str) -> str:
         >>> print(hashed)
         $2b$12$...
     """
-    return pwd_context.hash(password)
+    return bcrypt.hashpw(password.encode("utf-8"), bcrypt.gensalt()).decode("utf-8")
 
 
 def verify_password(plain_password: str, hashed_password: str) -> bool:
@@ -49,7 +46,9 @@ def verify_password(plain_password: str, hashed_password: str) -> bool:
         >>> verify_password("wrongpassword", hashed)
         False
     """
-    return pwd_context.verify(plain_password, hashed_password)
+    return bcrypt.checkpw(
+        plain_password.encode("utf-8"), hashed_password.encode("utf-8")
+    )
 
 
 def create_access_token(

@@ -10,7 +10,8 @@
       "mcp__atlassian__getVisibleJiraProjects",
       "WebFetch(domain:letscoding.atlassian.net)",
       "Bash(mkdir:*)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(ATLASSIAN_SITE_NAME=letscoding ATLASSIAN_USER_EMAIL=$ATLASSIAN_EMAIL ATLASSIAN_API_TOKEN=$ATLASSIAN_API_TOKEN npx:*)"
     ]
   }
 }
